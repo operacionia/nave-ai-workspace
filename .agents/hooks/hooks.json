@@ -1,0 +1,21 @@
+{
+  "$comment": "Host-neutral hook manifest for the workspace root. `node .agents/tools/harness-bridges.mjs write` renders it into `.claude/settings.json` (hooks key only) and `.codex/hooks.json`. Scripts are relative to the workspace root, exit 0, never touch the network and only ever write generated host files. Codex receives `--json` and expects {\"additionalContext\": ...} on stdout.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume",
+        "hooks": [
+          { "script": ".agents/hooks/session-start.sh", "timeout": 20 }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit|NotebookEdit",
+        "hooks": [
+          { "script": ".agents/hooks/after-edit.sh", "timeout": 60 }
+        ]
+      }
+    ]
+  }
+}

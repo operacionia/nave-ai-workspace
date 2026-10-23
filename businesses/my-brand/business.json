@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "id": "my-brand",
+  "name": "My Brand",
+  "operatorId": "operator",
+  "type": "single-business",
+  "shape": null,
+  "departments": [],
+  "onboardingStatus": "not-started",
+  "activeTask": null
+}

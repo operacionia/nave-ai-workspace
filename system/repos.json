@@ -1,0 +1,4 @@
+{
+  "$comment": "Repositories the push skill covers besides this workspace (always first). Paths absolute or relative to the workspace root.",
+  "repos": []
+}

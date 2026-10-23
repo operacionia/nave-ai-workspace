@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "name": "My Brand AI Workspace",
+  "status": "template-not-onboarded",
+  "operator": { "id": "operator", "name": "Operator" },
+  "template": { "id": "nave-ai-workspace", "repository": "agentic-ai-content/nave-ai-workspace" },
+  "businesses": [
+    { "id": "my-brand", "name": "My Brand", "path": "businesses/my-brand" }
+  ],
+  "businessInstallations": [],
+  "capabilities": [
+    { "id": "nave", "source": "agentic-ai-content/nave", "installsAt": "businesses/<b>/departments/content" }
+  ],
+  "activeSchedules": []
+}

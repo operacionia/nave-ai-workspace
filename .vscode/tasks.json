@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "harness watch — keep .claude and .codex in sync with .agents",
+      "type": "shell",
+      "command": "node .agents/tools/harness-watch.mjs",
+      "isBackground": true,
+      "problemMatcher": [],
+      "runOptions": { "runOn": "folderOpen" },
+      "presentation": { "reveal": "silent", "panel": "dedicated" }
+    }
+  ]
+}
